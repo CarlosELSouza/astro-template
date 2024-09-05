@@ -13,6 +13,12 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>{title}</title>
 	</head>
 	<body>
@@ -20,9 +26,8 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: "Inter", sans-serif;
 	}
 	code {
 		font-family:
@@ -33,6 +38,7 @@ const { title } = Astro.props;
 			DejaVu Sans Mono,
 			Bitstream Vera Sans Mono,
 			Courier New,
-			monospace;
+			monospace,
+			Inter;
 	}
 </style>
